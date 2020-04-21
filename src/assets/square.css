@@ -1,12 +1,12 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
-ol,
+/* ol,
 ul {
   padding-left: 30px;
-}
+} */
 
 .board-row:after {
   clear: both;
@@ -25,12 +25,12 @@ ul {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 50px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 50px;
 }
 
 .square:focus {
@@ -41,11 +41,87 @@ ul {
   background: #ddd;
 }
 
-.game {
+/* .game {
   display: flex;
   flex-direction: row;
-}
+   text-align: center;
+  justify-content: center;
+   margin-left: 50%; 
+} */
 
 .game-info {
-  margin-left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  justify-content: center;
+  /* margin-left: 50%; */
+}
+
+.game-board {
+  margin-top: 60px;
+  text-align: center;
+  justify-content: center;
+  padding-left: 44.7%;
+}
+
+h1 {
+  color: #30ba67;
+  font-size: 35px;
+}
+
+@media all and (max-width: 1200px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 44.7%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 43%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 40%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 38%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 35%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .game-board {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 33%;
+  }
 }
