@@ -117,11 +117,11 @@ h1 {
   }
 }
 
-@media all and (max-width: 375px) {
+/* @media all and (max-width: 375px) {
   .game-board {
     margin-top: 60px;
     text-align: center;
     justify-content: center;
     padding-left: 33%;
   }
-}
+} */
