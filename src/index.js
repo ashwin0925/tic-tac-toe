@@ -58,6 +58,7 @@ class Game extends React.Component {
     };
   }
 
+
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -103,7 +104,7 @@ class Game extends React.Component {
 
     let status;
     if (winner) {
-      status = "Winner: " + winner;
+      status = "Winner: " + winner + <button>play again</button>
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
@@ -115,6 +116,8 @@ class Game extends React.Component {
           <div className="game-info">
             <div>{status}</div>
             {/* <ol>{moves}</ol> */}
+            {/* <button onClick={() => window.location.reload(false)}>Play again!</button> */}
+
           </div>
         </div>
         <div className="game">
