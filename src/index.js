@@ -104,7 +104,7 @@ class Game extends React.Component {
 
     let status;
     if (winner) {
-      status = "Winner: " + winner + <button>play again</button>
+      status = <button className="play_btn" onClick={() => window.location.reload(false)}>Play again!</button>
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
@@ -114,6 +114,7 @@ class Game extends React.Component {
         <div className="hero">
           <h1>Tic-Tac-Toe</h1>
           <div className="game-info">
+            <div> {winner ? "winner is :" + winner : ''}</div>
             <div>{status}</div>
             {/* <ol>{moves}</ol> */}
             {/* <button onClick={() => window.location.reload(false)}>Play again!</button> */}

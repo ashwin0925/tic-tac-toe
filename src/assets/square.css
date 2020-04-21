@@ -14,9 +14,9 @@ ul {
   display: table;
 }
 
-.status {
+/* .status {
   margin-bottom: 10px;
-}
+} */
 
 .square {
   background: #fff;
@@ -70,6 +70,14 @@ ul {
 h1 {
   color: #30ba67;
   font-size: 35px;
+}
+
+.play_btn {
+  margin-top: 10px;
+  border: 2px solid #30ba67;
+  background: none;
+  font-size: 16px;
+  height: 25px;
 }
 
 @media all and (max-width: 1200px) {
